@@ -1,0 +1,52 @@
+{
+  "name": "yukino-lib",
+  "version": "0.0.3",
+  "main": "dist/main.bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch",
+    "start": "webpack serve",
+    "server": "node server.js",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <17.0.0",
+    "@types/react-dom": ">=16.8.0 <17.0.0",
+    "react": ">=16.8.0 <17.0.0",
+    "react-dom": ">=16.8.0 <17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@teamsupercell/typings-for-css-modules-loader": "^2.4.0",
+    "@types/lodash-es": "^4.17.3",
+    "@types/react": "16.9.12",
+    "@types/react-dom": "^16.9.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "lodash-es": "^4.17.15",
+    "node-sass": "^5.0.0",
+    "office-ui-fabric-react": "7.152.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
